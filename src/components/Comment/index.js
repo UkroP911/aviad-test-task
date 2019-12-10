@@ -7,15 +7,14 @@ import {
 
 const Comment = (props) => {
   return(
-    <Card>
+    <Card className="mb-2">
       <CardBody>
-        {props.id}
         <CardTitle>{props.name}</CardTitle>
         <CardText>{props.body}</CardText>
         <CardSubtitle>{props.email}</CardSubtitle>
       </CardBody>
     </Card>
   )
-}
+};
 
 export default Comment;
